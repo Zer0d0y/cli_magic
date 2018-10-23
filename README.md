@@ -4,6 +4,12 @@
 ```
 tcpdump  -nnn -t -s0 -l -i $EthX host IP1 | cut -d "," -f 1
 tcpdump  -nnn -t -s0 -l -i $EthX host IP1 | cut -d "." -f 1,2,3,4,5,6,7,8
+
+# output
+IP 192.168.x.xxx.41282 > 192.168.x.1.80: Flags [S]
+IP 192.168.x.1.80 > 192.168.x.xxx.41282: Flags [S.]
+IP 192.168.x.xxx.41282 > 192.168.x.1.80: Flags [.]
+IP 192.168.x.xxx.41282 > 192.168.x.1.80: Flags [F.]
 ```
 
 #### 2.Netfilter Debugging
