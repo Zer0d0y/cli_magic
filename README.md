@@ -30,3 +30,7 @@ http://inai.de/images/nf-packet-flow.svg
 ```
 ![](https://www.zer0d0y.info/images/Tips-and-Hacks-for-Everyday-Life-p1.png)
 
+#### 3.命令提示符显示IP地址
+```
+PS1="\[\033[01;31m\]\u@"192.168.X.X" \w #\[\033[00m\] ";
+```
