@@ -34,3 +34,11 @@ http://inai.de/images/nf-packet-flow.svg
 ```
 PS1="\[\033[01;31m\]\u@"192.168.X.X" \w #\[\033[00m\] ";
 ```
+
+#### 4.grep only text files
+```
+find /etc -type f -exec grep "入侵检测" -Iq  {} \; -and -print
+# 参考：https://github.com/BurntSushi/ripgrep
+```
+
+
